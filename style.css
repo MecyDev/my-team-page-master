@@ -240,3 +240,33 @@ figcaption {
         margin-top: -50px;    
     }
 }
+
+@media screen and (max-width: 544px) {
+
+    html {
+        width: 100%;
+    }
+
+    body {
+        width: 100%;
+        background-color: #FAFAFA;
+        margin: 25px auto 0 auto;
+      }
+
+    .content {
+        margin-top: 36px;
+        justify-content: initial;
+    }
+
+    .content div {
+        margin: 0;
+    }
+
+    .content div:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .content div:nth-child(odd) {
+        margin-top: 0;    
+    }
+}
