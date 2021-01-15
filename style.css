@@ -85,6 +85,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    animation:fadein 1.5s;
 }
 
 .content div:nth-child(2) {
@@ -103,7 +104,6 @@ body {
     position: relative;
     width: 264px;
     height: 383px;
-    animation:fadein ease 2s;
 }
 
 .card img {
@@ -112,15 +112,15 @@ body {
     height: 341px;
     top: 0;
     left: 0;
-}
-
-.card:hover {
-    background-color: #cecece;
+    border-radius: 5px;
+    
 }
 
 .card img:hover {
+    /*transform: rotate(-5deg);*/
+    opacity: 0.8;
+    animation: rotation .15s ease-in;
     transform: rotate(-5deg);
-    opacity: 0.7;
 }
 
 figcaption {
@@ -147,7 +147,7 @@ figcaption {
     text-transform: uppercase;
     color: var(--color);
     writing-mode: vertical-rl;
-    transform: scaleX(+1) scaleY(+1);
+    /*transform: scaleX(+1) scaleY(+1);*/
 }
 
 .footer {
@@ -254,7 +254,6 @@ figcaption {
     }
 }
 
-
 @media screen and (max-width: 509px) {
 
     .content div:nth-child(even) {
@@ -315,13 +314,16 @@ figcaption {
 **************************************************************/
 
 @keyframes fadein {
-    from {
-        opacity:0;
-    }
-    to {
-        opacity:1;
-    }
+
+    from { opacity:0; filter: blur(3px); }
+    to { opacity:1; filter: blur(0);}
 }
 
+@keyframes rotation {
 
+    0% { transform: rotate(0); }
+
+    50% { transform: rotate(5deg); }
+
+    100% { transform: rotate(-5deg); }
 }
