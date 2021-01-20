@@ -229,6 +229,9 @@ figcaption {
 }
 
 
+
+
+
 @media screen and (max-device-width: 480px) {
     
     body {
@@ -236,7 +239,7 @@ figcaption {
     }
 
     .header {
-        margin-top: 71px;
+        margin-top: 36px;
         margin-bottom: 56px;
     }
     
@@ -272,10 +275,31 @@ figcaption {
     figcaption {
         font-size: 1.4rem;
     }
+
+    .footer {
+        margin-top : 50px;
+    }
 }
 
 
+@media screen and (max-device-width: 320px) {
 
+    .content div:nth-child(even) {
+        margin-top: 0;
+    }
+
+    .content div:nth-child(5) {
+        margin-top: 0;
+    }
+
+    .content div {
+        margin-bottom: 25px;
+    }
+
+    .footer {
+        margin-top : 25px;
+    }
+}
 
 
 @keyframes fadein {
