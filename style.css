@@ -178,12 +178,12 @@ figcaption {
     background-color: var(--color-2);
 }
 
-footer {
+.footer {
     flex-basis: 100%;
-    margin: 100px auto 0px auto;
+    margin: 100px auto 30px auto;
 }
 
-footer p {
+.footer p {
     font-family: var(--font-3);
     font-style: normal;
     font-weight: 600;
@@ -193,10 +193,14 @@ footer p {
     color: #A9A9A9;
 }
 
-footer a:hover {
+.footer a:hover {
     color: #4f4f4f;
     text-decoration: underline #4f4f4f;
 }
+
+
+
+
 
 @media screen and (max-width: 1200px) {
 
@@ -209,6 +213,10 @@ footer a:hover {
     }
 }
 
+
+
+
+
 @media screen and (max-width: 896px) {    
     
     .content div:nth-child(even) {
@@ -219,6 +227,10 @@ footer a:hover {
         margin-top: 0;    
     }
 }
+
+
+
+
 
 @media screen and (max-device-width: 480px) {
 
@@ -260,6 +272,10 @@ footer a:hover {
         font-size: 1.4rem;
     }
 }
+
+
+
+
 
 @keyframes fadein {
 
