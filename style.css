@@ -302,7 +302,10 @@ figcaption {
     .content div {
         margin-bottom: 25px;
     }
-
+    
+    .footer {
+        margin-top : 50px;
+    }
 }
 
 @media screen and (max-device-width: 480px) {
