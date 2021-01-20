@@ -229,7 +229,36 @@ figcaption {
 }
 
 
+@media screen and (max-width: 586px) {
+    .content div:nth-child(even) {
+        margin-top: 50px;
+    }
 
+    .content div:nth-child(5) {
+        margin-top: 0;
+    }
+
+    .card {
+        position: relative;
+        width: 156px;
+        height: 237px;
+    }
+    
+    .card img {
+        position: absolute;
+        width: 138.72px;
+        height: 209px;
+    }
+    
+    .function {
+        font-size: 1rem;
+        line-height: 130%;
+    }
+    
+    figcaption {
+        font-size: 1.4rem;
+    }
+}
 
 
 @media screen and (max-device-width: 480px) {
