@@ -291,8 +291,16 @@ figcaption {
 
 @media screen and (max-width: 361px) {
 
-    .content div {
+    .content div:nth-child(even) {
         margin-top: 0;
+    }
+
+    .content div:nth-child(5) {
+        margin-top: 0;
+    }
+
+    .content div {
+        margin-bottom: 25px;
     }
 
 }
