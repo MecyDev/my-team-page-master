@@ -229,10 +229,7 @@ figcaption {
 }
 
 
-
-
-
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 586px), (max-device-width: 480px) {
 
     .header {
         margin-top: 71px;
